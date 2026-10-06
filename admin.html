@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>PLG Admin Panel</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+<body>
+
+<div id="loginScreen" class="login-screen">
+
+    <div class="login-box">
+
+        <div class="admin-logo">
+            PLG
+        </div>
+
+        <span>PRIVATE ACCESS</span>
+
+        <h1>Admin Panel</h1>
+
+        <p>
+            Sign in to manage PLG Gang applications.
+        </p>
+
+
+        <form id="loginForm">
+
+            <input
+    type="email"
+    id="adminEmail"
+    placeholder="Admin email"
+    autocomplete="email"
+    required
+>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Password"
+                required
+            >
+
+            <button type="submit">
+                Sign In
+                <span>→</span>
+            </button>
+
+            <div id="loginMessage"></div>
+
+        </form>
+
+        <button
+            class="back-home"
+            onclick="location.href='index.html'"
+        >
+            ← Back to website
+        </button>
+
+    </div>
+
+</div>
+
+
+<div id="adminApp" class="admin-app hidden">
+
+    <header class="admin-nav">
+
+        <div>
+
+            <span>PLG GANG</span>
+
+            <h2>Application Manager</h2>
+
+        </div>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <div class="stats">
+
+            <div>
+                <span>Total</span>
+                <strong id="totalCount">0</strong>
+            </div>
+
+            <div>
+                <span>Pending</span>
+                <strong id="pendingCount">0</strong>
+            </div>
+
+            <div>
+                <span>Approved</span>
+                <strong id="approvedCount">0</strong>
+            </div>
+
+            <div>
+                <span>Rejected</span>
+                <strong id="rejectedCount">0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="toolbar">
+
+            <div class="filter-buttons">
+
+                <button class="filter active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter" data-filter="pending">
+                    Pending
+                </button>
+
+                <button class="filter" data-filter="seen">
+                    Seen
+                </button>
+
+                <button class="filter" data-filter="approved">
+                    Approved
+                </button>
+
+                <button class="filter" data-filter="rejected">
+                    Rejected
+                </button>
+
+            </div>
+
+            <button id="refreshBtn" class="refresh">
+                ↻ Refresh
+            </button>
+
+        </div>
+
+
+        <div id="applications" class="applications">
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>༄Pʟɢ༒Gᴀɴɢ࿐ | Official</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<div class="bg-glow glow-one"></div>
+<div class="bg-glow glow-two"></div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="brand" id="secretLogo">
+        <img src="logo.png" alt="PLG Gang Logo">
+        <div>
+            <strong>༄Pʟɢ༒Gᴀɴɢ࿐</strong>
+            <span>OFFICIAL GUILD</span>
+        </div>
+    </div>
+
+    <div class="social-nav">
+
+        <a
+            href="https://youtube.com/@prolockgaming?si=iuCMvEiroTP3LDNH"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+        >
+            <img src="youtube.png" alt="YouTube">
+        </a>
+
+        <a
+            href="https://www.instagram.com/plg_gang_?stkn=MWNhbHRhcGsycWM1OQ=="
+            target="_blank"
+            rel="noopener"
+            aria-label="Instagram"
+        >
+            <img src="instagram.png" alt="Instagram">
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+    <!-- HOME -->
+
+    <section class="section active" id="home">
+
+        <div class="hero">
+
+            <div class="hero-badge">
+                <span></span>
+                PLG GANG OFFICIAL
+            </div>
+
+            <h1>
+                Prove Your Skills.<br>
+                <em>Join The Gang.</em>
+            </h1>
+
+            <p>
+                Apply for Guild Test or GVG directly.
+                Submit your details and track your application status anytime.
+            </p>
+
+        </div>
+
+
+        <!-- ACTION CARDS -->
+
+        <div class="action-grid">
+
+            <button class="action-card red-card" data-section="guild-test">
+
+                <div class="card-icon">
+                    ⚡
+                </div>
+
+                <div class="card-content">
+                    <small>PLAYER APPLICATION</small>
+                    <h2>Guild Test</h2>
+                    <p>
+                        Want to join PLG Gang?
+                        Submit your player details and choose your test.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </button>
+
+
+            <button class="action-card dark-card" data-section="gvg">
+
+                <div class="card-icon">
+                    ⚔
+                </div>
+
+                <div class="card-content">
+                    <small>GUILD VS GUILD</small>
+                    <h2>GVG</h2>
+                    <p>
+                        Challenge PLG Gang for a Guild VS Guild match.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </button>
+
+
+            <button class="action-card status-card" data-section="status">
+
+                <div class="card-icon">
+                    ◉
+                </div>
+
+                <div class="card-content">
+                    <small>TRACK APPLICATION</small>
+                    <h2>Application Status</h2>
+                    <p>
+                        Check whether your application is pending,
+                        seen, approved or rejected.
+                    </p>
+                </div>
+
+                <span class="arrow">→</span>
+
+            </button>
+
+        </div>
+
+
+        <!-- PLAYER INFO -->
+
+        <div class="player-strip">
+
+            <div>
+                <span>PLAYER</span>
+                <strong>༄Pʀᴏ༒Lᴏᴄᴋ࿐</strong>
+            </div>
+
+            <div>
+                <span>UID</span>
+                <strong>1590025874</strong>
+            </div>
+
+            <div>
+                <span>GUILD</span>
+                <strong>༄Pʟɢ༒Gᴀɴɢ࿐</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GUILD TEST ================= -->
+
+    <section class="section" id="guild-test">
+
+        <div class="page-head">
+
+            <button class="back-btn" data-section="home">
+                ← Back
+            </button>
+
+            <div class="page-label">PLAYER APPLICATION</div>
+
+            <h2>Guild Test</h2>
+
+            <p>
+                Fill in your correct Free Fire details.
+                You will receive a tracking code after submission.
+            </p>
+
+        </div>
+
+
+        <form class="application-form" id="guildTestForm">
+
+            <div class="form-title">
+                <span>01</span>
+                Player Details
+            </div>
+
+
+            <label>
+                Player Name
+                <input
+                    type="text"
+                    id="playerName"
+                    placeholder="Enter your in-game name"
+                    required
+                >
+            </label>
+
+
+            <label>
+                UID
+                <input
+                    type="text"
+                    id="playerUID"
+                    placeholder="Enter Free Fire UID"
+                    inputmode="numeric"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Server
+
+                <select id="server" required>
+                    <option value="">Select server</option>
+                    <option>India</option>
+                    <option>Singapore</option>
+                    <option>Brazil</option>
+                    <option>Bangladesh</option>
+                    <option>Pakistan</option>
+                    <option>Indonesia</option>
+                    <option>Thailand</option>
+                    <option>Middle East</option>
+                    <option>Europe</option>
+                    <option>North America</option>
+                    <option>Other Server</option>
+                </select>
+            </label>
+
+
+            <div id="otherServerField" class="hidden-field">
+
+                <label>
+                    Enter Server Name
+
+                    <input
+                        type="text"
+                        id="otherServer"
+                        placeholder="Enter server name"
+                    >
+                </label>
+
+            </div>
+
+
+            <label>
+                Test Type
+
+                <select id="testType" required>
+                    <option value="">Select test type</option>
+                    <option value="1v1">1v1</option>
+                    <option value="1v2">1v2</option>
+                    <option value="1v3">1v3</option>
+                    <option value="1v4">1v4</option>
+                    <option value="1v5">1v5</option>
+                    <option value="1v6">1v6</option>
+                </select>
+            </label>
+
+
+            <button class="submit-btn" type="submit">
+                Submit Guild Test
+                <span>→</span>
+            </button>
+
+            <div id="guildFormMessage" class="form-message"></div>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= GVG ================= -->
+
+    <section class="section" id="gvg">
+
+        <div class="page-head">
+
+            <button class="back-btn" data-section="home">
+                ← Back
+            </button>
+
+            <div class="page-label">GUILD VS GUILD</div>
+
+            <h2>GVG Challenge</h2>
+
+            <p>
+                Send your guild details for a GVG challenge.
+            </p>
+
+        </div>
+
+
+        <form class="application-form" id="gvgForm">
+
+            <div class="form-title">
+                <span>01</span>
+                Guild Details
+            </div>
+
+
+            <label>
+                Guild Name
+                <input
+                    type="text"
+                    id="guildName"
+                    placeholder="Enter guild name"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Leader Name
+                <input
+                    type="text"
+                    id="leaderName"
+                    placeholder="Enter leader name"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Leader UID
+                <input
+                    type="text"
+                    id="leaderUID"
+                    placeholder="Enter leader UID"
+                    inputmode="numeric"
+                    required
+                >
+            </label>
+
+
+            <label>
+                Server
+
+                <select id="gvgServer" required>
+                    <option value="">Select server</option>
+                    <option>India</option>
+                    <option>Singapore</option>
+                    <option>Brazil</option>
+                    <option>Bangladesh</option>
+                    <option>Pakistan</option>
+                    <option>Indonesia</option>
+                    <option>Thailand</option>
+                    <option>Middle East</option>
+                    <option>Europe</option>
+                    <option>North America</option>
+                    <option>Other Server</option>
+                </select>
+            </label>
+
+
+            <div id="gvgOtherServerField" class="hidden-field">
+
+                <label>
+                    Enter Server Name
+
+                    <input
+                        type="text"
+                        id="gvgOtherServer"
+                        placeholder="Enter server name"
+                    >
+                </label>
+
+            </div>
+
+
+            <button class="submit-btn dark-submit" type="submit">
+                Submit GVG Challenge
+                <span>→</span>
+            </button>
+
+            <div id="gvgFormMessage" class="form-message"></div>
+
+        </form>
+
+    </section>
+
+
+    <!-- ================= STATUS ================= -->
+
+    <section class="section" id="status">
+
+        <div class="page-head">
+
+            <button class="back-btn" data-section="home">
+                ← Back
+            </button>
+
+            <div class="page-label">APPLICATION TRACKING</div>
+
+            <h2>Check Status</h2>
+
+            <p>
+                Enter the tracking code you received after submitting your application.
+            </p>
+
+        </div>
+
+
+        <div class="status-search">
+
+            <input
+                type="text"
+                id="trackingInput"
+                placeholder="Paste your tracking code"
+            >
+
+            <button id="checkStatusBtn">
+                Check Status
+                <span>→</span>
+            </button>
+
+        </div>
+
+
+        <div id="statusEmpty" class="status-empty">
+
+            <div class="empty-icon">⌁</div>
+
+            <h3>No Application Loaded</h3>
+
+            <p>
+                Enter your tracking code above to view your application.
+            </p>
+
+        </div>
+
+
+        <div id="statusResult" class="status-result hidden">
+
+            <div class="status-top">
+
+                <div>
+                    <span class="mini-label">APPLICATION</span>
+                    <h3 id="statusApplicationType">Guild Test</h3>
+                </div>
+
+                <div id="statusBadge" class="status-badge pending">
+                    PENDING
+                </div>
+
+            </div>
+
+
+            <div class="status-details">
+
+                <div>
+                    <span>Name</span>
+                    <strong id="statusName">—</strong>
+                </div>
+
+                <div>
+                    <span>UID</span>
+                    <strong id="statusUID">—</strong>
+                </div>
+
+                <div>
+                    <span>Server</span>
+                    <strong id="statusServer">—</strong>
+                </div>
+
+                <div>
+                    <span>Submitted</span>
+                    <strong id="statusDate">—</strong>
+                </div>
+
+            </div>
+
+
+            <div class="status-message-box">
+
+                <span>ADMIN MESSAGE</span>
+
+                <p id="statusMessage">
+                    Your application is being reviewed.
+                </p>
+
+            </div>
+
+
+            <button id="refreshStatus" class="outline-btn">
+                Refresh Status
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= SUCCESS MODAL ================= -->
+
+<div class="modal hidden" id="successModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close" id="closeModal">
+            ×
+        </button>
+
+        <div class="success-icon">
+            ✓
+        </div>
+
+        <span class="page-label">SUBMISSION RECEIVED</span>
+
+        <h2>Application Submitted</h2>
+
+        <p id="successText">
+            Your application has been submitted successfully.
+        </p>
+
+        <div class="tracking-box">
+
+            <span>YOUR TRACKING CODE</span>
+
+            <strong id="trackingCode">
+                —
+            </strong>
+
+            <button id="copyTracking">
+                Copy Code
+            </button>
+
+        </div>
+
+        <button id="viewStatusBtn" class="submit-btn">
+            View Application Status
+            <span>→</span>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+
+    <span>✓</span>
+
+    <p id="toastText">
+        Done
+    </p>
+
+</div>
+
+
+<footer>
+
+    <span>
+        © <span id="currentYear"></span> ༄Pʟɢ༒Gᴀɴɢ࿐
+    </span>
+
+    <span>
+        Official Guild Portal
+    </span>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
